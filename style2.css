@@ -21,7 +21,7 @@ body{
   padding-bottom: 64px;
 }
 #main-header{
-  background-image:url(images/edinburgh.jpeg);
+  background-image:url(edinburgh.jpeg);
   background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -141,7 +141,7 @@ border-bottom: 2px transparent #333;
 }
 @media (max-width: 700px) {
   #main-header{
-    background-image: url(images/sky.jpg);
+    background-image: url(sky.jpg);
   }
   #navbar ul{
     display: grid;
