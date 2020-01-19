@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  background-color: #f1f1f1;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  height: 100%;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding-bottom: 64px;
+}
+#main-header{
+  background-image:url(images/edinburgh.jpeg);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /*font-size: 18px;
+  color:#333;
+  font-weight: bold;*/
+  height: 209px;
+  width: 100%;
+  margin: 0;
+}
+.container-1{
+display: grid;
+grid-template-columns: 1fr 4fr 1fr;
+justify-items: center;
+border: 3px transparent #333;
+border-bottom: 2px transparent #333;
+}
+#navbar{
+  background: #333;
+  text-align: left;
+  border-top: 1px solid #000;
+  width: 100%;
+}
+#navbar ul{
+  list-style: none;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+#navbar li{
+  display: inline;
+}
+#navbar a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 30px;
+}
+#navbar a:hover{
+  color: red;
+}
+#section{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  grid-row-gap:0;
+  grid-column-gap: 80px;
+  grid-auto-rows: minmax(100px auto);
+  min-height: 100%;
+  min-width: 100%;
+}
+.container-1{
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding: 15px 20px;
+  max-width: 1120px;
+}
+.container-1 h3{
+  padding-bottom: 15px;
+  text-decoration: underline;
+}
+.container-1 p{
+  text-align: center;
+}
+.image{
+  margin: o;
+  padding: 20px 30px;
+}
+.image img{
+  width: 100%;
+}
+.aside{
+  border:1px transparent black;
+  margin: auto;
+  padding: auto;
+}
+.aside p{
+  text-align: justify;
+}
+.aside h3{
+  padding-bottom: 10px;
+  padding-top: 15px;
+  text-decoration: underline;
+}
+.aside a{
+  text-decoration: none;
+  color: #333;
+}
+.aside a:hover{
+  color: red;
+}
+#footer{
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  /*position: fixed;
+  z-index: 1;*/
+}
+
+@media (max-width: 700px) {
+  #main-header{
+    background-image: url(images/sky.jpg);
+  }
+  #navbar ul{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr ;*/
+  }
+  #navbar a{
+    font-size: 15px;
+  }
+  #section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-items: flex-start;
+  }
+  .container-1{
+    order:1;
+  }
+  .container-1 h3{
+    text-align: justify;
+  }
+  .container-1 p{
+    text-align: justify;
+  }
+  .image{
+    order:2;
+  }
+  .aside{
+    order:3;
+    padding-bottom: 20px;
+    align-items: flex-start;
+    margin: 0;
+    padding-left: 20px;
+  }
+}
+
